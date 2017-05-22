@@ -1,0 +1,333 @@
+/* Ordenador */
+
+@media screen and (min-width: 779px) {
+
+  /* Fuentes */
+
+	@font-face {
+	font-family: Neptune;
+	font-style: normal;
+	font-weight: normal;
+	src: url(../FONT/Neptune.otf) format('otf');
+  }
+
+
+  /* Estilos HTML general */
+
+	.dynamic:hover {
+		cursor:pointer;
+	}
+
+
+
+  body {background-image: url("../IMGS/carretera.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f2f3f4;
+  overflow: scroll;
+  height: 100%;
+  margin: 0;
+  padding: 0;}
+
+
+
+a:visited {color: white;}
+
+  /* Barra de navegación */
+
+.sticky {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+
+.sticky-error {
+  margin: 1.5vh;
+  padding: 1.75vh;
+  width: 2.5vh;
+  height: auto;
+  float: left;
+	overflow: default;
+  }
+
+.sticky-error:hover {
+	animation: animacion 2s linear infinite;
+	-webkit-animation: animacion 2s linear infinite;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #f2f3f4;
+    background: transparent;
+}
+
+li {
+    float: right;
+}
+
+
+li a {
+    display: block;
+    color: #f2f3f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Neptune, sans-serif;
+    letter-spacing: 1px;
+}
+
+li a:hover {
+	animation: animacion 2s linear infinite;
+	-webkit-animation: animacion 2s linear infinite;
+
+}
+
+li a:visited {
+	text-decoration: none;
+	color: #f2f3f4;
+
+}
+	/* IMGS First */
+
+#twitter {
+  margin-top: 105vh;
+	width: 3%;
+	margin-left: 40%;
+	margin-bottom: 10vh;
+	float: left;}
+
+#instagram {
+  margin-top: 105vh;
+	width: 3%;
+	margin-left: 5%;
+  float: left;
+	}
+
+#youtube {
+	margin-top: 105vh;
+	width: 3%;
+	margin-left: 5%;
+  }
+
+#twitter:hover {
+	animation: animacion 2s linear infinite;
+	-webkit-animation: animacion 2s linear infinite;}
+
+#instagram:hover {
+	animation: animacion 2s linear infinite;
+	-webkit-animation: animacion 2s linear infinite;
+}
+
+#youtube:hover {
+	animation: animacion 2s linear infinite;
+	-webkit-animation: animacion 2s linear infinite;
+}
+
+  /* Main */
+
+.logo-distort {
+  width: 5%;
+margin-top: 12vh;
+margin-right: 35vh;
+float: right;
+animation: animacion 2s linear infinite;
+-webkit-animation: animacion 2s linear infinite;
+overflow: default;
+}
+
+::-webkit-scrollbar { /*Esta sentencia sirve para ocultar la scrollbar en navegadores Webkit*/
+  display: none;}
+
+.subtitle {
+  color:#04040b;
+  margin-right: 50px;
+
+}
+
+.subtitle p{
+	margin-top: 7%;
+	margin-left: 45vh;
+	margin-right: 20vh;
+	font-family: 'Helvetica', sans-serif;
+	text-align: justify;
+	font-size: 1em;
+	line-height: 1.25em;
+	letter-spacing: 0.15em;
+	position: absolute;
+
+}
+
+.subtitle-white p{
+  margin-top: 9.5%;
+  margin-left: 45vh;
+  margin-right: 20vh;
+  font-family: 'Helvetica', sans-serif;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.25em;
+  letter-spacing: 0.15em;
+  position: absolute;
+  color: #f2f3f4;
+
+}
+
+#first {
+  position: absolute, relative;
+  height:1080px;
+  width:100%;
+}
+
+#white {
+  position: absolute, relative;
+  background-color: #f2f3f4;
+  height: 50vh;
+  width: auto;
+}
+
+#white2 {
+  position: absolute, relative;
+  background-color: #f2f3f4;
+  height: 50vh;
+  width: auto;
+}
+
+#black {
+  position: absolute, relative;
+  background-color: #04040b;
+  height: 50vh;
+  width: auto;
+}
+
+#black2 {
+  position: absolute, relative;
+  background-color: #04040b;
+  height: 50vh;
+  width: auto;
+}
+
+.kioto {
+  font-family: Neptune, sans-serif;
+  letter-spacing: 0.25em;
+  font-size: 7em;
+  color: #f2f3f4;
+  text-align: center;
+  width: auto;
+  height: 6vh;
+  line-height: 6vh;
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	cursor:s-resize;
+
+ }
+
+ .kioto:hover {
+
+	 letter-spacing: 0.25em;
+ 	 animation: animacion-3 1s linear infinite;
+  -webkit-animation: animacion-3 1s linear infinite;
+ }
+
+/* Footer */
+
+.footer {
+	background-color: #04040b;
+	height: 7vh;
+}
+
+
+.footer p {
+	margin: 0;
+	padding-left: 47%;
+	padding-top: 1.25%;
+	font-family: Neptune, sans-serif;
+	font-size: 1em;
+  letter-spacing: 0.15em;
+
+}
+
+.footer p:hover {
+	margin: 0;
+	padding-left: 45%;
+	padding-top: 1.25%;
+	font-size: 1em;
+  letter-spacing: 0.5em;
+	animation: animacion-3 1s linear infinite;
+ -webkit-animation: animacion-3 1s linear infinite;
+
+  }
+
+}
+
+
+/* Animación */
+
+@keyframes animacion-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes animacion-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes animacion {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@keyframes animacion-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+}
+
+/* Animación - Navegador WebKit */
+
+@-webkit-keyframes animacion-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@-webkit-keyframes animacion-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@-webkit-keyframes animacion {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@-webkit-keyframes animacion-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}

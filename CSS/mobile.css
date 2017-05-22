@@ -1,0 +1,240 @@
+/* IPhone 5S */
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 768px)
+and (orientation : portrait) {
+
+  /* Fuentes */
+
+	@font-face {
+	font-family: Neptune;
+	font-style: normal;
+	font-weight: normal;
+	src: url(../FONT/Neptune.otf) format('otf');
+  }
+
+/* Estilos HTML general */
+
+  .dynamic:hover {
+    cursor:pointer;
+  }
+
+
+
+  body {background-image: url("../IMGS/carretera.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f2f3f4;
+  overflow: scroll;
+  height: 100%;
+  margin: 0;
+  padding: 0;}
+
+
+
+a:visited {color: white;}
+
+  /* Barra de navegación */
+
+.sticky {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+
+.sticky-error {
+  margin: 1.5vh;
+  padding: 1.75vh;
+  width: 2.5vh;
+  height: auto;
+  float: left;
+  overflow: default;
+  }
+
+.sticky-error:hover {
+  animation: noise 2s linear infinite;
+  -webkit-animation: noise 2s linear infinite;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #f2f3f4;
+    background: transparent;
+}
+
+li {
+    float: right;
+}
+
+
+li a {
+    display: none;
+    color: #f2f3f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Neptune, sans-serif;
+    letter-spacing: 1px;
+}
+
+li a:hover {
+  animation: noise 2s linear infinite;
+  -webkit-animation: noise 2s linear infinite;
+
+}
+
+li a:visited {
+  text-decoration: none;
+  color: #f2f3f4;
+
+}
+  /* IMGS First */
+
+#twitter {
+  margin-top: 105vh;
+  width: 15%;
+  margin-left: 25%;
+  margin-bottom: 10vh;
+  float: left;}
+
+#instagram {
+  margin-top: 105vh;
+  width: 15%;
+  margin-left: 5%;
+  float: left;
+  }
+
+#youtube {
+  margin-top: 105vh;
+  width: 15%;
+  margin-left: 5%;
+  }
+
+  /* Main */
+
+.logo-distort {
+width: 5%;
+margin-top: 30vh;
+margin-right: 27vh;
+float: right;
+
+}
+
+::-webkit-scrollbar { /*Esta sentencia sirve para ocultar la scrollbar en navegadores Webkit*/
+  display: none;}
+
+.subtitle {
+  color:#04040b;
+  margin-right: 50px;
+
+}
+
+.subtitle p{
+  margin-top: 7%;
+  margin-left: 15vh;
+  margin-right: 10vh;
+  font-family: 'Helvetica', sans-serif;
+  text-align: justify;
+  font-size: 0.5em;
+  line-height: 1.25em;
+  letter-spacing: 0.15em;
+  position: absolute;
+
+}
+
+.subtitle-white p{
+  margin-top: 10%;
+  margin-left: 5vh;
+  margin-right: 10vh;
+  font-family: 'Helvetica', sans-serif;
+  text-align: justify;
+  font-size: 0.5em;
+  line-height: 1.25em;
+  letter-spacing: 0.15em;
+  position: absolute;
+  color: #f2f3f4;
+
+}
+
+#first {
+  position: absolute, relative;
+  height:720px;
+  width:100%;
+}
+
+#white {
+  position: absolute, relative;
+  background-color: #f2f3f4;
+  height: 50vh;
+  width: auto;
+}
+
+#white2 {
+  position: absolute, relative;
+  background-color: #f2f3f4;
+  height: 50vh;
+  width: auto;
+}
+
+#black {
+  position: absolute, relative;
+  background-color: #04040b;
+  height: 50vh;
+  width: auto;
+}
+
+#black2 {
+  position: absolute, relative;
+  background-color: #04040b;
+  height: 50vh;
+  width: auto;
+}
+
+.kioto {
+  font-family: Neptune, sans-serif;
+  letter-spacing: 0.25em;
+  font-size: 4em;
+  color: #f2f3f4;
+  text-align: center;
+  width: auto;
+  height: 6vh;
+  line-height: 6vh;
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 5%;
+  right: 0;
+  cursor:s-resize;
+
+ }
+
+
+/* Footer */
+
+.footer {
+  background-color: #04040b;
+  height: 7vh;
+}
+
+
+.footer p {
+  margin: 0;
+  padding-left: 40%;
+  padding-top: 3%;
+  font-family: Neptune, sans-serif;
+  font-size: 0.75em;
+  letter-spacing: 0.15em; }
+
+}

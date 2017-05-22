@@ -1,0 +1,165 @@
+@media only screen
+and (min-width : 320px)
+and (max-width : 768px)
+and (orientation : portrait) {
+
+body {background: #04040B;
+  color: white;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;}
+
+@font-face {
+   font-family: Sango Uppercase;
+   font-style: normal;
+   font-weight: normal;
+   src: url(FONT/Sango Uppercase.otf);}
+
+a:visited {color: white;}
+
+/* Animación */
+
+.static {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -100px;
+  opacity: 0.05;
+
+}
+
+.error {
+  text-align: center;
+  font-family: 'Sango Uppercase', sans-serif;
+  letter-spacing: 25px;
+  font-size: 55px;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -120px;
+  right: 0;
+  animation: animacion 2s linear infinite;
+  -webkit-animation: animacion 2s linear infinite;
+  overflow: default;
+}
+
+.error:after {
+  content: 'KIDS';
+  font-family: 'Sango Uppercase', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #00CECB;
+  animation: animacion-1 .2s linear infinite;
+  -webkit-animation: animacion-1 .2s linear infinite;
+}
+
+.info {
+  text-align: center;
+  font-family: 'Osaka', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: animacion-3 1s linear infinite;
+  -webkit-animation: animacion-3 1s linear infinite;
+}
+
+.error:before {
+  content: 'kids';
+  font-family: 'Sango Uppercase', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  color: #FF5E5B;
+  animation: animacion-2 .2s linear infinite;
+  -webkit-animation: animacion-2 .2s linear infinite;
+}
+
+/* Animación */
+
+@keyframes animacion-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes animacion-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes animacion {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@keyframes animacion-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+}
+
+}
+/* Animación - Navegador WebKit */
+
+@-webkit-keyframes animacion-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@-webkit-keyframes animacion-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@-webkit-keyframes animacion {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@-webkit-keyframes animacion-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
